@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="root"></div>
+
+
+<script type="text/babel">
+  function Prod (props){
+      return (
+          <div className="prod-box">
+              <div className="prod-name"><h1 className="prod-name__text">{props.product.name}</h1></div>
+              <div className="prod-pic">
+                  <img className="prod-pic__img" src={props.product.url}
+                        alt={props.product.name}/>
+              </div>
+              <div className="prod-desc"><p className="prod-desc__text">{props.product.desc}</p></div>
+              <button className="toCard"><span className="btn-text">{props.btn.text}</span></button>
+          </div>
+      );
+  }
+  const product = {
+
+          name: 'iPhone 6s',
+          url: 'http://ishop-retail.com.opt-images.1c-bitrix-cdn.ru/upload/resize_cache/iblock/3b0/256_256_0/3b033466f707f7f6fad79a49f7642ec5.jpg?147771132722805',
+          desc: 'Released 2015, September\n' +
+          '143g, 7.1mm thickness\n' +
+          'iOS 9, up to iOS 11.4\n' +
+          '16/32/64/128GB storage, no card slot'
+
+  }
+  const btn ={
+      text: 'Add to card'
+  }
+  ReactDOM.render(
+      <Prod
+      product = {product}
+      btn = {btn}
+
+      />,
+          document.getElementById("root")
+  )
+</script>
+
+</body>
+</html>

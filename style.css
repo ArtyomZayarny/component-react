@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.prod-title {
+    color: #333;
+    font-size: 24px;
+    line-height: 1.20849;
+    font-weight: 500;
+    letter-spacing: 0;
+    font-family: SF Pro Display, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.prod-box {
+    max-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.prod-desc__text {
+    color: #888;
+    font-size: 17px;
+    line-height: 1.52947;
+    font-weight: 400;
+    letter-spacing: -.021em;
+    margin-bottom: 17px;
+}
+.btn-text{
+    font-size: 17px;
+    line-height: 1.52947;
+    font-weight: 400;
+
+
+    background-color: #0070c9;
+    background: linear-gradient(#42a1ec,#0070c9);
+    border-color: #07c;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    min-width: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 3px;
+    padding-bottom: 4px;
+    text-align: center;
+    white-space: nowrap
+}
